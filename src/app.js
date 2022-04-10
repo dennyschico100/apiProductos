@@ -41,10 +41,8 @@ const connection = async () => {
       console.log(error);
     });
 };
-//connection();
 
-app.set('PORT', process.env.port || 3000);
-
+app.set('PORT', process.env.port || 4000);
 app.use('/api/productos', ProductoRoutes);
 app.get('/', (_, res) => {
   res.json('OK');
